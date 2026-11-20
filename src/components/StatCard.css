@@ -1,0 +1,12 @@
+.stat { padding: 16px 18px; display: flex; flex-direction: column; gap: 14px; }
+.stat__top { display: flex; align-items: center; gap: 14px; }
+.stat__label { font-size: 14px; color: #dbe7de; }
+.stat__value { font-size: 26px; font-weight: 600; line-height: 1.2; }
+.stat__value small { font-size: 20px; font-weight: 500; color: #dbe7de; }
+.bar { height: 8px; border-radius: 99px; background: rgba(255, 255, 255, 0.1); overflow: hidden; }
+.bar i { display: block; height: 100%; border-radius: inherit; background: var(--t); }
+.stat--blue   { --t: #2fa8ff; }
+.stat--orange { --t: #ff8a2b; }
+.stat--purple { --t: #9a6bff; }
+.stat--yellow { --t: #ffc928; }
+.stat .stat__top svg { color: var(--t); }

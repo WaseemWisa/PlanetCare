@@ -1,0 +1,4 @@
+.date-card { padding: 16px 18px; display: flex; align-items: center; gap: 14px; }
+.date-card svg { color: var(--green); flex: none; }
+.date-card__label { font-size: 14px; color: #dbe7de; }
+.date-card__value { font-size: 16px; font-weight: 500; line-height: 1.5; }

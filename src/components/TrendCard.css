@@ -1,0 +1,12 @@
+.trend { padding: 16px 18px 14px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.trend header { display: flex; justify-content: space-between; align-items: center; }
+.trend h2 { font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+.trend h2 svg { color: var(--c); }
+.trend:has(.chart--lg) h2 { font-size: 16px; }
+.chart-wrap { display: flex; flex: 1; }
+.chart-wrap > .chart { flex: 1; }
+.chart-wrap.chart--lg .chart { --h: 200px; font-size: 13px; }
+.select {
+  display: flex; align-items: center; gap: 8px; font-size: 12px; padding: 6px 12px;
+  border: 1px solid var(--edge); border-radius: 8px; background: rgba(255, 255, 255, 0.05);
+}

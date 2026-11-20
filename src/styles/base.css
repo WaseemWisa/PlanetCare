@@ -1,0 +1,22 @@
+:root {
+  --bg: #06130c;
+  --panel: rgba(9, 27, 19, 0.72);
+  --edge: rgba(255, 255, 255, 0.09);
+  --text: #f2f7f3;
+  --muted: #a9bdb1;
+  --green: #5fe36b;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; margin: 0; }
+html, body, #root { height: 100%; }
+body { font-family: "Poppins", system-ui, sans-serif; background: var(--bg); color: var(--text); }
+button { font: inherit; color: inherit; cursor: pointer; border: 0; background: none; }
+:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.g { color: var(--green); }
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}

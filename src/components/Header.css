@@ -1,0 +1,23 @@
+.hero {
+  display: flex; justify-content: space-between; gap: 20px; min-height: 150px; padding-top: 4px;
+  /* Drop your plant photo at /public/plant-hero.png to get the full look */
+  background: url("/plant-hero.png") 62% 0 / auto 170% no-repeat;
+}
+.hero h1 { font-size: clamp(28px, 3.2vw, 40px); line-height: 1.12; font-weight: 700; }
+.hero h1 span { color: #6be66f; }
+.hero__sub { margin-top: 14px; color: #d5e4d9; display: flex; align-items: center; gap: 8px; }
+.hero__meta { text-align: center; color: #dfe9e2; display: flex; flex-direction: column; gap: 8px; align-items: center; }
+.hero__time { display: flex; align-items: center; gap: 8px; }
+.pill {
+  display: inline-flex; align-items: center; gap: 10px; padding: 10px 22px;
+  border: 1px solid rgba(95, 227, 107, 0.6); border-radius: 12px;
+  background: rgba(20, 90, 40, 0.4); font-weight: 500;
+}
+.pill i { width: 14px; height: 14px; border-radius: 50%; background: #35e05a; box-shadow: 0 0 10px #35e05a; }
+.pill.is-off { border-color: rgba(255, 120, 100, 0.6); background: rgba(90, 25, 20, 0.4); }
+.pill.is-off i { background: #ff6a55; box-shadow: 0 0 10px #ff6a55; }
+
+@media (max-width: 800px) {
+  .hero { flex-direction: column; background-image: none; }
+  .hero__meta { align-items: flex-start; text-align: left; }
+}
